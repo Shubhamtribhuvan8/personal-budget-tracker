@@ -1,12 +1,12 @@
 "use client"
 
-import { useState } from "react"
-import { Button } from "./ui/button"
+// import { useState } from "react"
+// import { Button } from "./ui/button"
 // import { PlusIcon } from "lucide-react"
 // import { TransactionDialog } from "../components/transaction-dialog"
 
 export function TransactionsHeader() {
-  const [open, setOpen] = useState(false)
+  // const [open, setOpen] = useState(false)
 
   return (
     <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">

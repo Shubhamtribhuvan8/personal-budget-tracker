@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { EditIcon, Trash2Icon, PlusCircleIcon, PlusIcon } from "lucide-react"
+import { EditIcon, Trash2Icon, PlusIcon } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card"
 import { Input } from "./ui/input"
 import { Button } from "./ui/button"

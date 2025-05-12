@@ -28,7 +28,6 @@ export function BudgetManagement() {
     setError("")
     
     try {
-      const months = []
       const monthsData = []
       
       // Determine months to fetch based on selected year

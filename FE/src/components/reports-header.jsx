@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { CalendarIcon, DownloadIcon } from "lucide-react"
+import { CalendarIcon } from "lucide-react"
 import { format } from "date-fns"
 import { Button } from "./ui/button"
 import { Calendar } from "./ui/calendar"
@@ -12,30 +12,7 @@ import { jsPDF } from 'jspdf'
 export function ReportsHeader() {
   const [date, setDate] = useState(new Date())
   const [exportData, setExportData] = useState([])
-  const [showCalendar, setShowCalendar] = useState(false);
-
-  const handleExport = () => {
-    // Assuming we have a function to fetch data for the selected date
-    // This is a placeholder for actual data fetching logic
-    const dummyData = [
-      { date: format(date, "yyyy-MM-dd"), amount: 100, category: "Food" },
-      { date: format(date, "yyyy-MM-dd"), amount: 200, category: "Transport" },
-      { date: format(date, "yyyy-MM-dd"), amount: 300, category: "Utilities" },
-    ]
-    setExportData(dummyData)
-  }
-
-  const handleDownloadCSV = () => {
-    const csvContent = Object.keys(exportData[0]).join(",") + "\n" + exportData.map(row => Object.values(row).join(",")).join("\n");
-    const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
-    const link = document.createElement("a");
-    const url = URL.createObjectURL(blob);
-    link.setAttribute("href", url);
-    link.setAttribute("download", "export.csv");
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  }
+  const [setShowCalendar] = useState(false);
 
   const handleDownloadPDF = () => {
     const doc = new jsPDF();

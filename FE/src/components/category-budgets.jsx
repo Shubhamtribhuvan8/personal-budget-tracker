@@ -16,7 +16,7 @@ export function CategoryBudgets() {
   const [dialogOpen, setDialogOpen] = useState(false)
   const [isLoading, setIsLoading] = useState(true)
   const [error, setError] = useState("")
-  const [categoryMap, setCategoryMap] = useState({})
+  const [setCategoryMap] = useState({})
   const [budgetToDelete, setBudgetToDelete] = useState(null)
   const [deleteDialogOpen, setDeleteDialogOpen] = useState(false)
 

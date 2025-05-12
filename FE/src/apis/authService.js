@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = process.env.BASE_URL|| 'http://localhost:8000/api'|| 'https://multifoldapi.onrender.com/api';
+const API_URL = process.env.BASE_URL|| 'https://personal-budget-tracker-8d77.onrender.com/api';
 
 export const authService = {
   async login(email, password) {

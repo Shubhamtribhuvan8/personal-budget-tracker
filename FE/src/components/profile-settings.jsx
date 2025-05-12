@@ -1,15 +1,13 @@
 "use client"
 
 import { Button } from "./ui/button"
-import { useAuth } from '../context/AuthContext';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "./ui/card"
 import { Input } from "./ui/input"
 import Label  from "./ui/label"
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar"
 
 export function ProfileSettings() {
-  const { currentUser, logout } = useAuth();
-  return (
+return (
     <Card>
       <CardHeader>
         <CardTitle>Profile</CardTitle>

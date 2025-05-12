@@ -3,7 +3,7 @@
 import React, { useState } from "react"
 import { useAuth } from '../context/AuthContext';
 import { useLocation, useNavigate } from "react-router-dom"
-import { BarChart3, ChevronDown, ChevronRight, CreditCard, DollarSign, Home, LogOut, PieChart, Settings } from "lucide-react"
+import { BarChart3, ChevronRight, CreditCard, DollarSign, Home, LogOut, PieChart, Settings } from "lucide-react"
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar"
 import { Button } from "./ui/button"
 
@@ -31,7 +31,7 @@ export function AppSidebar() {
   const [isCollapsed, setIsCollapsed] = useState(false)
   const location = useLocation()
   const navigate = useNavigate()
-  const { currentUser, logout } = useAuth();
+  const { currentUser } = useAuth();
   
 
   const menuItems = [
